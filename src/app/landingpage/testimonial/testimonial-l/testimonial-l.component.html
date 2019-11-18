@@ -1,0 +1,56 @@
+<!-- template with three colums -->
+<div class="container-fluid testimonial">
+  <div class="testimonial-img">
+    <img
+      class="d-block w-100"
+      src="assets/img/pics/27394121-diverse-gruppe-von-menschen-stehen-in-reihe-und-zeigt-daumen-nach-oben-isoliert-auf-weiß.jpg"
+      alt="Menschengruppe"
+    />
+  </div>
+  <div class="row header">
+    <div class="col-12 d-flex align-items-center justify-content-center ">
+      <div><span>Stimmen unserer Absoventen:</span></div>
+    </div>
+  </div>
+  <div id="carouselTestimonial" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li
+        *ngFor="let page of pages.pages; let k = index"
+        data-target="#carouselTestimonial"
+        ngClass="k == 0 ? 'carousel-item active' :  'carousel-item'"
+        [attr.data-slide-to]="k"
+      ></li>
+    </ol>
+    <div class="carousel-inner">
+      <div
+        *ngFor="let page of pages.pages; let i = index"
+        [ngClass]="i === 0 ? 'carousel-item active' : 'carousel-item'"
+      >
+        <div class="row students d-flex align-items-end">
+          <div class="col-4" *ngFor="let student of page.students">
+            <div class="card">
+              <img
+                class="rounded-circle "
+                src="{{ student.imagePath }}"
+                alt="absolvent"
+              />
+              <div class="card-body">
+                <div class="pointer text-justify">
+                  <div class="overflow-box">
+                    <p>
+                      {{ student.desc }}
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer text-center">
+                  <p>{{ student.name }}</p>
+                  <p>Weiterbildung {{ student.modul }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

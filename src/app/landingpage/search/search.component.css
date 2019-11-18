@@ -1,0 +1,176 @@
+/* ----JUMBOTRON-SEARCHENGINE---- */
+/* change attributes of the containers */
+.jumbotron-search-engine {
+  margin: 1.2rem 0;
+}
+.row.jumbotron {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(150, 190, 210, 1),
+    rgba(255, 255, 255, 1)
+  );
+}
+.form-search-engine {
+  margin: 0 auto;
+  width: 70%;
+}
+/* change attributes of search-input */
+.form-control {
+  padding: 0 1.2rem;
+  font-size: 24px;
+  line-height: 1;
+  background-color: #f1f6fa;
+  border-color: #e85e2f;
+  border-radius: 7px;
+  border-width: 2px;
+  border-right-style: none;
+}
+
+.form-control::placeholder {
+  padding: 0;
+  font-size: 24px;
+  color: #edaa8f;
+  opacity: 1;
+}
+.form-control:focus {
+  border-color: #e85e2f;
+  box-shadow: none;
+}
+
+/* change attributes of zoom-symbol icon */
+.fa-search {
+  margin-right: 10px;
+  color: #fff;
+  background-color: transparent;
+}
+.fa-search::before {
+  font-size: 1.4rem;
+}
+
+/* change attributes of the searchbutton  */
+.btn-search-engine {
+  padding: 0 0.5rem;
+  font-size: 24px;
+  border-color: #e85e2f;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-width: 2px;
+  color: #fff;
+  background-color: #e85e2f;
+}
+/* change  hover attributes of the searchbutton  */
+.btn-outline-secondary:hover {
+  border-color: #e6724b;
+  border-width: 2px;
+  background-color: #e6724b;
+}
+.btn:focus {
+  box-shadow: none;
+}
+/* ---Media Queries--- */
+
+@media (max-width: 992px) {
+  /* ----JUMBOTRON-SEARCHENGINE---- */
+  /* change attributes of the containers */
+  .jumbotron-search-engine {
+    margin: 1rem 0;
+  }
+  .form-control {
+    padding: 0 1rem;
+    font-size: 20px;
+  }
+  .form-control::placeholder {
+    font-size: 20px;
+  }
+  .form-search-engine {
+    margin: 0 auto;
+    width: 70%;
+  }
+  /* change attributes of zoom-symbol icon */
+  .fa-search {
+    margin-right: 8px;
+  }
+  .fa-search::before {
+    font-size: 1.2rem;
+  }
+  /* change attributes of search-button */
+  .btn-search-engine {
+    padding: 0 0.4rem;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  /* ----JUMBOTRON-SEARCHENGINE---- */
+  /* change attributes of of the containers */
+  .jumbotron-search-engine {
+    margin: 0.8rem 0;
+  }
+  .row.jumbotron {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .form-search-engine {
+    margin: 0 auto;
+    width: 80%;
+  }
+  /* change attributes of search-input */
+  .form-control {
+    padding: 0 0.8rem;
+    font-size: 1.2rem;
+  }
+  .form-control::placeholder {
+    font-size: 1.2rem;
+  }
+  /* change attributes of zoom-symbol icon */
+  .fa-search {
+    margin-right: 0.1rem;
+  }
+  .fa-search::before {
+    font-size: 1.2rem;
+  }
+  /* change attributes of search-button */
+  .btn-search-engine {
+    padding: 0 0.3rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  /* --- SEARCHENGINE --- */
+  /* change attributes of the containers */
+  .jumbotron-search-engine {
+    margin: 0.4rem 0;
+  }
+  .row.jumbotron {
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .form-search-engine {
+    width: 90%;
+  }
+  /* change attributes of search-input */
+  .form-control {
+    padding: 0 0.5rem;
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  .form-control::placeholder {
+    font-size: 1rem;
+  }
+  /* change attributes of zoom-symbol icon */
+  .fa-search {
+    margin-right: 5px;
+  }
+  .fa-search::before {
+    font-size: 1rem;
+  }
+  /* change attributes of search-button */
+  .btn-search-engine {
+    padding: 0 0.3rem;
+    font-size: 1rem;
+  }
+}

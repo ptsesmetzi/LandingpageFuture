@@ -1,0 +1,143 @@
+/* ----Testimonial1---- */
+/* change attributs for the container */
+.testimonial {
+  position: relative;
+  margin: 2rem auto 0 auto;
+}
+.testimonial-img {
+  object-fit: fill;
+}
+/* set attributs for gradient */
+.testimonial::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(140, 168, 185, 0.6) 75%
+  );
+}
+/* setting testimonial header */
+.testimonial .header {
+  width: 50%;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+
+.testimonial .header span {
+  font-size: 1.8rem;
+  padding: 0 1rem;
+  color: #fff;
+  background-color: #e85e2f;
+  box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.5);
+}
+
+/* setting attributs of carousel-container */
+#carouselTestimonial {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* setting attributs of postcards-absolvents */
+.testimonial .students {
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+/* change the attributs of bootstrapcard */
+.testimonial .students .card {
+  border: none;
+  background-color: transparent;
+  margin: 2rem auto;
+  max-width: 80%;
+  height: 95%;
+  font-size: 0.65rem;
+  transition: 0.5s ease-in-out;
+}
+.testimonial .students .card:hover {
+  transform: scale(1.2);
+  transform-origin: 50% 75%;
+}
+
+/* setting attribute of img */
+.testimonial .students .rounded-circle {
+  margin: 0 auto;
+  width: 30%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+  transition: all 0.5s ease-in-out;
+}
+
+/* setting attributs for the pointer */
+.testimonial .students .pointer {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.pointer:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-top: solid 10px #fff;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+}
+.testimonial .students .overflow-box {
+  padding: 0.5rem 1.5rem;
+  background-color: #fff;
+}
+.testimonial .students .pointer p {
+  height: 120px;
+  overflow: hidden;
+  background-color: #fff;
+  line-height: 1.5rem;
+  margin: 0;
+}
+/* setting attributs for the footer */
+.testimonial .card-footer {
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  background-color: transparent;
+}
+
+.testimonial .card-footer p {
+  margin: 0;
+  padding: 0;
+}
+/* setting the attributs for the little dots */
+.testimonial .carousel-indicators {
+  bottom: 0px;
+}
+.testimonial .carousel-indicators li {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #808080;
+  opacity: 1;
+}
+.testimonial .carousel-indicators li:hover {
+  opacity: 1;
+  background-color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .testimonial .students .card .card-body {
+    padding-bottom: 0;
+  }
+  /* setting attributs of postcards-absolvents */
+  .testimonial .students {
+    margin: 0 auto;
+    padding: 1.7rem;
+  }
+}

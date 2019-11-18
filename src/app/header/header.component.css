@@ -1,0 +1,91 @@
+/*---- NAVIGATION ---- */
+
+/* change logo height */
+.navbar-brand img {
+  height: 15vh;
+}
+/* change font-size and padding */
+.navbar {
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+/* change padding between links */
+.navbar-nav li {
+  padding: 7px 25px 7px 0;
+}
+/* change backgound-color of navigation */
+.navbar-custom {
+  background-color: #fff;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: #535353;
+  padding: 0;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link {
+  border-bottom: 3px solid #e85e2f;
+}
+.navbar-custom .nav-item:hover .nav-link {
+  color: #8a8989;
+}
+
+/* ---Media Queries--- */
+
+@media (max-width: 992px) {
+  /* change logo height */
+  .navbar-brand img {
+    height: 8vh;
+  }
+  /* change font-size and padding */
+  .navbar {
+    font-size: 0.9rem;
+    padding-right: 1rem 0;
+  }
+}
+@media (max-width: 768px) {
+  /* change logo height */
+  .navbar-brand img {
+    height: 8vh;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .navbar {
+    font-size: 0.9rem;
+    padding-right: 1rem 0;
+    background-color: lightblue;
+  }
+  /* change attributes the dropdown menu */
+  .navbar-expand-md > .container,
+  .navbar-expand-md > .container-fluid {
+    padding-right: 0.5rem;
+    padding-left: 0.5ren;
+    padding-bottom: 0.5rem;
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-custom {
+    padding: 0;
+  }
+  .navbar-nav {
+    padding: 10px 0;
+  }
+  .navbar-custom .nav-item.active {
+    background-color: #e85e2f;
+  }
+  .navbar-custom .nav-item.active .nav-link {
+    color: #fff;
+  }
+
+  .navbar-nav li {
+    padding: 7px 20px;
+    text-align: right;
+  }
+}
+@media (max-width: 576px) {
+}

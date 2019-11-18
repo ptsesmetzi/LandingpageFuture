@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'LandingPageFuture';
+  title: string = 'LandingPageFuturef';
+
+  constructor() {
+    this.changeTitle(' hansi');
+  }
+  changeTitle(title: string) {
+    this.title = title;
+  }
 }

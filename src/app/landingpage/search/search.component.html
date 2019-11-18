@@ -1,0 +1,27 @@
+<!-- Jumbotron-Searchengine -->
+<div class="container-fluid jumbotron-search-engine">
+  <div class="row jumbotron">
+    <div class="col-12">
+      <form class="form-search-engine" (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="input-group">
+          <input
+            type="text"
+            id="searchterm"
+            class="form-control"
+            placeholder="Kurse finden"
+            ngModel
+            name="searchterm"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-search-engine btn-outline-secondary"
+              type="submit"
+            >
+              <i class="fa fa-search"></i>Suche
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

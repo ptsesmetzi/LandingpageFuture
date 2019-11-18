@@ -1,0 +1,9 @@
+<!-- Image-Slider Stimmen unsere Absolbenten -->
+<!-- template with one colum -->
+<div *ngIf="isSmal; else otherContent">
+  <app-testimonial-s></app-testimonial-s>
+</div>
+<!-- template with trhee colum -->
+<ng-template class="testi" #otherContent>
+  <app-testimonial-l></app-testimonial-l>
+</ng-template>
